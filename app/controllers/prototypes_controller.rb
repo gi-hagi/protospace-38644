@@ -4,7 +4,7 @@ class PrototypesController < ApplicationController
   before_action :log_edit, only: [:edit, :update, :destroy]
 
   def index
-    @prototype = Prototype.all
+    @prototypes = Prototype.all
   end
   
   def new
